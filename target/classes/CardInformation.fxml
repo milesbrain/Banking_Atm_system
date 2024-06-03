@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.project1.CardInformation">
+    <children>
+        <ComboBox fx:id="CardTypes" layoutX="26.0" layoutY="237.0" prefHeight="25.0" prefWidth="229.0" promptText="Select The Type of Card You Want" style="-fx-background-color: red;" />
+        <TextField fx:id="Pin_Number" layoutX="59.0" layoutY="167.0" prefHeight="36.0" prefWidth="149.0" promptText="My Atm Pin" />
+        <Label layoutX="187.0" layoutY="22.0" prefHeight="27.0" prefWidth="273.0" text="CARD INFORMATION">
+            <font>
+                <Font name="Bodoni MT Black" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="26.0" layoutY="119.0" prefHeight="36.0" prefWidth="289.0" text="Create the Pin for Your ATM Card">
+            <font>
+                <Font name="Bookman Old Style" size="17.0" />
+            </font>
+        </Label>
+        <Button layoutX="289.0" layoutY="330.0" mnemonicParsing="false" onAction="#HaveACard" prefHeight="36.0" prefWidth="131.0" text="Have A Card Now" textFill="#e21300">
+            <font>
+                <Font name="Bodoni MT Condensed" size="21.0" />
+            </font>
+        </Button>
+        <ImageView fitHeight="66.0" fitWidth="131.0" layoutX="442.0" layoutY="137.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@myAtmLogo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="355.0" layoutY="215.0" prefHeight="21.0" prefWidth="237.0" text="Your ATM Card Front Numbers ">
+            <font>
+                <Font name="Bookman Old Style" size="15.0" />
+            </font>ppp
+        </Label>
+        <TextField fx:id="Card_Number" editable="false" layoutX="359.0" layoutY="256.0" prefHeight="36.0" prefWidth="229.0">
+            <font>
+                <Font size="10.0" />
+            </font>
+        </TextField>
+        <Label fx:id="setAmount" layoutX="253.0" layoutY="64.0" prefHeight="36.0" prefWidth="198.0" textFill="#fd1d05">
+            <font>
+                <Font name="Baskerville Old Face" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="accountdisplay" layoutX="134.0" layoutY="64.0" prefHeight="36.0" prefWidth="124.0" text="Account No">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="570.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.project1.Atm_controllr">
+    <children>
+        <Button layoutX="22.0" layoutY="268.0" mnemonicParsing="false" onAction="#CreateNewAccountButton" prefHeight="47.0" prefWidth="87.0" text="2">
+            <font>
+                <Font name="Bauhaus 93" size="29.0" />
+            </font></Button>
+        <Button layoutX="22.0" layoutY="410.0" mnemonicParsing="false" onAction="#ChangePin" prefHeight="47.0" prefWidth="87.0" text="3">
+            <font>
+                <Font name="Bauhaus 93" size="28.0" />
+            </font></Button>
+        <Button layoutX="542.0" layoutY="410.0" mnemonicParsing="false" onAction="#BalanceButton" prefHeight="47.0" prefWidth="99.0" text="6">
+            <font>
+                <Font name="Bauhaus 93" size="25.0" />
+            </font></Button>
+        <Button layoutX="542.0" layoutY="278.0" mnemonicParsing="false" onAction="#DepositButton" prefHeight="47.0" prefWidth="99.0" text="5">
+            <font>
+                <Font name="Bauhaus 93" size="26.0" />
+            </font></Button>
+        <Pane layoutX="109.0" layoutY="85.0" prefHeight="400.0" prefWidth="431.0" style="-fx-background-color: red;">
+            <children>
+                <Label layoutX="62.0" layoutY="6.0" prefHeight="38.0" prefWidth="315.0" text="WELCOME TO MILES BANK">
+                    <font>
+                        <Font name="Book Antiqua" size="21.0" />
+                    </font>
+                </Label>
+                <Label layoutX="8.0" layoutY="67.0" prefHeight="38.0" prefWidth="200.0" text="1. CASH WITHDRAWAL">
+                    <font>
+                        <Font name="Algerian" size="19.0" />
+                    </font>
+                </Label>
+                <Label layoutX="8.0" layoutY="181.0" prefHeight="57.0" prefWidth="186.0" text="2. CREATE A NEW ACCOUNT">
+                    <font>
+                        <Font name="Algerian" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="8.0" layoutY="329.0" prefHeight="38.0" prefWidth="155.0" text="3.CHANGE PIN">
+                    <font>
+                        <Font name="Algerian" size="17.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" layoutX="300.0" layoutY="67.0" prefHeight="47.0" prefWidth="127.0" text="TRANSFER .4">
+                    <font>
+                        <Font name="Algerian" size="16.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" layoutX="328.0" layoutY="200.0" prefHeight="38.0" prefWidth="99.0" text="DEPOSIT.5">
+                    <font>
+                        <Font name="Algerian" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="254.0" layoutY="325.0" prefHeight="47.0" prefWidth="186.0" text="CHECK BALANCE .6">
+                    <font>
+                        <Font name="Algerian" size="19.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Button layoutX="22.0" layoutY="144.0" mnemonicParsing="false" onAction="#withdrawalButton" prefHeight="47.0" prefWidth="87.0" text="1">
+            <font>
+                <Font name="Bauhaus 93" size="23.0" />
+            </font></Button>
+        <Button layoutX="540.0" layoutY="144.0" mnemonicParsing="false" onAction="#TransferButton" prefHeight="47.0" prefWidth="87.0" text="4">
+            <font>
+                <Font name="Bauhaus 93" size="27.0" />
+            </font></Button>
+        <SplitPane dividerPositions="0.5" layoutX="166.0" layoutY="488.0" orientation="VERTICAL" prefHeight="57.0" prefWidth="317.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="24.0" prefWidth="400.0" style="-fx-background-color: brown">
+                    <children>
+                        <Label layoutX="106.0" layoutY="-1.0" prefHeight="24.0" prefWidth="69.0" text="CASH">
+                            <font>
+                                <Font name="Berlin Sans FB" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: brown;" />
+            </items>
+        </SplitPane>
+        <Label alignment="CENTER" layoutX="202.0" layoutY="3.0" prefHeight="57.0" prefWidth="245.0" text="ATM">
+            <font>
+                <Font name="Bodoni MT Bold" size="67.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="498.0" prefWidth="714.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.project1.DisplayATmshow">
+    <children>
+        <ImageView fitHeight="239.0" fitWidth="384.0" layoutX="297.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@myAtm.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="CardNumbershows" layoutX="408.0" layoutY="132.0" prefHeight="29.0" prefWidth="225.0" />
+        <Label fx:id="CardTypeshow" layoutX="326.0" layoutY="232.0" prefHeight="17.0" prefWidth="110.0" />
+        <Label layoutX="111.0" layoutY="305.0" prefHeight="75.0" prefWidth="559.0" text="Here is Your ATM Card ,Go to The Customer  ">
+            <font>
+                <Font name="Calibri Italic" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="273.0" layoutY="363.0" prefHeight="39.0" prefWidth="225.0" text="Care To Pick It Up">
+            <font>
+                <Font name="Calibri" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="273.0" layoutY="445.0" prefHeight="20.0" prefWidth="243.0" text="Thanks for choosing miles bank">
+            <font>
+                <Font name="Brush Script MT Italic" size="23.0" />
+            </font>
+        </Label>
+        <Button layoutX="85.0" layoutY="89.0" mnemonicParsing="false" onAction="#GoToMain" prefHeight="112.0" prefWidth="163.0" style="-fx-background-color: green;" text="Go Back To Main Page" textFill="#e21d08">
+            <font>
+                <Font name="Calisto MT" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

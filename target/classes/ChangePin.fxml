@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="513.0" prefWidth="600.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.project1.Changecontroller">
+    <children>
+        <TextField fx:id="NewPin" layoutX="214.0" layoutY="239.0" prefHeight="48.0" prefWidth="149.0" />
+        <TextField fx:id="AccountNo" layoutX="214.0" layoutY="64.0" prefHeight="31.0" prefWidth="180.0" />
+        <Label layoutX="214.0" layoutY="26.0" prefHeight="31.0" prefWidth="215.0" style="-fx-background-color: red;" text="Account Number">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <PasswordField fx:id="OldPin" layoutX="214.0" layoutY="148.0" prefHeight="40.0" prefWidth="149.0" />
+        <TextField fx:id="NewCardConfirm" layoutX="214.0" layoutY="342.0" prefHeight="48.0" prefWidth="149.0" />
+        <Label layoutX="214.0" layoutY="106.0" prefHeight="31.0" prefWidth="215.0" style="-fx-background-color: red;" text="Old Card Pin">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="214.0" layoutY="302.0" prefHeight="31.0" prefWidth="215.0" style="-fx-background-color: red;" text="New Card 4 digit Pin confirm">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="214.0" layoutY="196.0" prefHeight="31.0" prefWidth="215.0" style="-fx-background-color: red;" text="New Card 4 digit Pin">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Button layoutX="243.0" layoutY="449.0" mnemonicParsing="false" onAction="#ConfirmPin" prefHeight="25.0" prefWidth="91.0" style="-fx-background-color: red;" text="Confirm" />
+    </children>
+</AnchorPane>

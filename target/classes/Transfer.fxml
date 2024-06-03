@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="456.0" prefWidth="600.0" style="-fx-background-color: RED;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atm.project1.TransferController">
+    <children>
+        <TextField fx:id="AccountNoSender" layoutX="66.0" layoutY="123.0" promptText="AccountNo" />
+        <TextField fx:id="RecipientAccNo" layoutX="413.0" layoutY="180.0" prefHeight="25.0" prefWidth="149.0" />
+        <ComboBox fx:id="combobox" layoutX="66.0" layoutY="201.0" prefWidth="150.0" promptText="Select Your Bank" />
+        <ComboBox fx:id="combo" layoutX="413.0" layoutY="243.0" prefWidth="150.0" promptText="Recipient Bank" />
+        <Label layoutX="66.0" layoutY="105.0" text="Account Number" textFill="#78a3e4" />
+        <Label layoutX="412.0" layoutY="162.0" text="Account Number" textFill="#78a3e4" />
+        <Label layoutX="66.0" layoutY="184.0" prefHeight="17.0" prefWidth="43.0" text="Bank" textFill="#78a3e4" />
+        <Label layoutX="411.0" layoutY="219.0" prefHeight="17.0" prefWidth="91.0" text="Bank" textFill="#78a3e4" />
+        <Label layoutX="66.0" layoutY="36.0" prefHeight="41.0" prefWidth="169.0" text="Sender Information" textFill="#129dcc">
+            <font>
+                <Font name="Blackadder ITC" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="423.0" layoutY="87.0" prefHeight="41.0" prefWidth="169.0" text="Recipient information" textFill="#1077dd">
+            <font>
+                <Font name="Blackadder ITC" size="23.0" />
+            </font>
+        </Label>
+        <Label layoutX="67.0" layoutY="302.0" text="Amount" textFill="#78a3e4" />
+        <TextField fx:id="AmountSend" layoutX="66.0" layoutY="331.0" prefHeight="25.0" prefWidth="149.0" />
+        <Button layoutX="291.0" layoutY="393.0" mnemonicParsing="false" onAction="#sendmoney" prefHeight="41.0" prefWidth="109.0" text="Send" />
+        <ImageView fitHeight="74.0" fitWidth="109.0" layoutX="467.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@myAtmLogo.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="467.0" layoutY="402.0" prefHeight="24.0" prefWidth="109.0" text="MILES BANK" textFill="#0d9fff">
+            <font>
+                <Font name="Blackadder ITC" size="14.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
